@@ -1,0 +1,294 @@
+html, body{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	color: #1c1c1c;
+}
+.padding250{
+	padding: 15px 250px;
+}
+.padding150{
+	padding: 15px 150px;
+}
+header{
+	/*position: fixed;
+	width: 100%;*/
+}
+nav.nav.desktop{
+	padding: 15px 25px;
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+}
+nav.nav.desktop div.nav-logo{
+
+}
+nav.nav.desktop div.nav-logo img{
+	width: 30%;
+}
+nav.nav.desktop div.nav-menu{
+	height: 100%;
+}
+nav.nav.desktop div.nav-menu ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav.nav.desktop div.nav-menu ul li{
+	margin: 0 50px;
+}
+nav.nav.desktop div.nav-menu ul li a{
+	text-decoration: none;
+	color: #4f4f4f;
+	font-weight: 600;
+	transition: 0.3s;
+}
+nav.nav.desktop div.nav-menu ul li a:hover{
+	color: #8f8f8f;
+}
+nav.nav.desktop div.nav-extend div img{
+	width: 32px;
+	height: auto;
+}
+
+
+section.cover div.cover-img{
+	background:url('../img/cover.jpg');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height: 520px;
+	display: flex;
+	align-items: center;
+
+}
+section.cover div.cover-txt{
+	display: flex;
+	flex-direction: column;
+	margin: 0px 150px;
+}
+section.cover div.cover-txt h1{
+	margin: 300px 0 0 0;
+	color: #f5f5f5;
+	font-size: 46px;
+}
+section.cover div.cover-txt h2{
+	margin: 0px 0 0 20px;
+	color: #f5f5f5;
+	font-size: 26px;
+	font-weight: lighter;
+	font-family: 'Roboto';
+}
+section.main-page.categories div.container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+section.main-page.categories div.container div.container-item{
+	width: 25%;
+	margin: 0 10px;
+	height: 70vh;
+	transition: 0.5s;
+}
+section.main-page.categories div.container div.container-item:hover{
+	transform: scale(1.03);
+}
+section.main-page.categories div.container div.container-item:nth-child(1){
+	background:url('../img/shoes.jpg');
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+}
+section.main-page.categories div.container div.container-item:nth-child(2){
+	background:url('../img/clothing.jpg');
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+}
+section.main-page.categories div.container div.container-item:nth-child(3){
+	background:url('../img/accesories.jpg');
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+}
+section.main-page.categories div.container div.container-item .information{
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(102, 102, 102, 0.5);
+	transition: visibility 0.5s, opacity 0.5s;
+}
+section.main-page.categories div.container div.container-item:hover .information{
+	visibility: visible;
+	opacity: 1;
+	
+}
+section.main-page.categories div.container div.container-item .information h2{
+	color: #f5f5f5;
+	font-size: 38px;
+	margin: 0;
+}
+section.main-page.categories div.container div.container-item .information h3 a{
+	color: #f5f5f5;
+	font-size: 22px;
+	margin: 5px 0 0 0;
+	border: 2px solid #f5f5f5;
+	padding: 5px 10px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+section.main-page.categories div.container div.container-item .information h3 a:hover{
+	background: #f5f5f5;
+	color: rgba(102, 102, 102);
+}
+section.new-products .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section.new-products .container .product{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #ebebeb;
+	width: 100%;
+}
+section.new-products .container .product:last-child{border-bottom: none;}
+section.new-products .container .product .product-img{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35vh;
+}
+/*section.new-products .container .product .product-img img{
+	min-width: 75%;
+	width:380px;
+	max-width: 455px;
+}*/
+
+section.new-products .container .product .product-info{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+section.new-products .container .product .product-info h2{
+	margin: 0;
+}
+section.new-products .container .product .product-info h3{
+	font-weight: 500;
+	margin: 0;
+}
+section.new-products .container .product .product-info h4{
+	margin: 5px 0 0 0;
+	font-weight: 300;
+}
+section.new-products .container .product .product-info h4::after{
+	content: '\20AC';
+	margin-left:5px;
+}
+section.new-products .container .product .product-info a{
+	margin-top: 30px;
+	color: #1c1c1c;
+	font-size: 18px;
+	border: 2px solid #1c1c1c;
+	padding: 5px 10px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+section.new-products .container .product .product-info a:hover{
+	color: #fff;
+	background:#1c1c1c;
+}
+
+
+
+footer{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	background: #1c1c1c;
+	color: #f5f5f5;
+}
+footer div{
+	width: 30%;
+}
+footer div.footer-menu ul li{
+	list-style-type: none;
+	margin: 10px 0;
+}
+footer div.footer-menu ul li a{
+	text-decoration: none;
+	color: #f5f5f5;
+}
+footer div.footer-contactsb{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer div.footer-contacts span{
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+	font-size: 14px;
+}
+footer div.footer-newsletter{
+	padding: 20px 0;
+}
+footer div.footer-newsletter label, footer div.footer-newsletter input{
+	display: block;
+	width: 40%;
+}
+footer div.footer-newsletter input{
+	margin-bottom: 10px;
+	padding: 3px 3px;
+	color: #1c1c1c;
+	font-family: 'Poppins','Roboto',sans-serif;
+	font-size: 16px;
+}
+footer div.footer-newsletter button{
+	margin-top: 10px;
+	width: 40%;
+	border: 0;
+	padding: 3px 3px;
+	color: #1c1c1c;
+	font-family: 'Poppins','Roboto',sans-serif;
+	font-size: 16px;
+}
+
+footer.secondary{
+	padding: 10px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 12px;
+	background: #424242;
+	width: 100%;
+}
+footer.secondary p{
+	margin: 5px 0;
+}
